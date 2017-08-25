@@ -2,6 +2,9 @@
   "name": "istedchill",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dawehner/istedchill.git"
+  },
   "license": "MIT"
 }
