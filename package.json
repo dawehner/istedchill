@@ -1,10 +1,19 @@
 {
   "name": "istedchill",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.1.0",
+  "main": "dist/index.js",
+  "es6:main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/dawehner/istedchill.git"
   },
-  "license": "MIT"
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "node node_modules/.bin/babel index.js --out-dir dist"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0"
+  }
 }
