@@ -1,6 +1,6 @@
 {
   "name": "istedchill",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "main": "dist/index.js",
   "es6:main": "index.js",
   "repository": {
