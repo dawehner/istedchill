@@ -8,12 +8,25 @@
     "url": "https://github.com/dawehner/istedchill.git"
   },
   "scripts": {
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "build": "node node_modules/.bin/babel index.js --out-dir dist"
   },
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-env": "^1.6.0"
+  },
+  "babel": {
+    "plugins": [
+      "add-module-exports"
+    ],
+    "presets": [
+      ["env", {
+        "targets": {
+          "browsers": ["last 2 versions", "safari >= 7"]
+        }
+      }]
+    ]
   }
 }
